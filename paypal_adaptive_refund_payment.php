@@ -1,4 +1,4 @@
-# Automating Paypal adaptive payment directly from the vendor area
+# Automating Paypal adaptive payment directly from the vendor area for a Dokan Plugin
 
 add_action( 'dokan_refund_requested', 'vendor_refund_paypal_adaptive_API', 20 , 2);
 function vendor_refund_paypal_adaptive_API($order_id, $refund) {
