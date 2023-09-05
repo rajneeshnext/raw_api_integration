@@ -1,4 +1,4 @@
-# Automating Paypal adaptive payment directly from vendor area
+# Automating Paypal adaptive payment directly from the vendor area
 
 add_action( 'dokan_refund_requested', 'vendor_refund_paypal_adaptive_API', 20 , 2);
 function vendor_refund_paypal_adaptive_API($order_id, $refund) {
@@ -48,12 +48,12 @@ function vendor_refund_paypal_adaptive_API($order_id, $refund) {
 			curl_setopt($ch, CURLOPT_POST, 1);	
 
 			$headers = array();
-			$headers[] = "X-Paypal-Security-Userid:sb-ilmth26738993_api1.business.example.com";
-			$headers[] = "X-Paypal-Security-Password:9GDWWJXZBDWD6TB6";
-			$headers[] = "X-Paypal-Security-Signature:AH7APT5m6fb-w0rO2fusA-L4BFU5Ab6yRDpCmXL7JCZuDIEJIfA5VQZF";
+			$headers[] = "X-Paypal-Security-Userid:xxxxxxx.business.example.com";
+			$headers[] = "X-Paypal-Security-Password:xxxxxxxxxxxxxx";
+			$headers[] = "X-Paypal-Security-Signature:xxxxxxxxxx-w0rO2fusA-L4BFU5Ab6yRDpCmXL7JCZuDIEJIfA5VQZF";
 			$headers[] = "X-Paypal-Request-Data-Format:NV";
 			$headers[] = "X-Paypal-Response-Data-Format:JSON";
-			$headers[] = "X-Paypal-Application-Id:APP-80W284485P519543T";
+			$headers[] = "X-Paypal-Application-Id:APP-xxxxxxxxx";
 			$headers[] = "Content-Type:text/value";
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
